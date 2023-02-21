@@ -128,15 +128,15 @@ const printTotalCharge = () =>{
 
 
   return (
-    <div className='pt-3 mx-auto px-20 bg-slate-100'>
+    <div className='pt-3 mx-auto px-20 bg-slate-100 h-full'>
       <div className='grid grid-cols-3'>
         <div className='col-span-2 grid grid-cols-3 '>
           {printDataFood()}
         </div>
-        <div className=''>
+        <div className='bg-white h-fit'>
           <div className='mt-2'>
             <p className='text-center'>Pesanan</p>
-            <div ref={componentRef}>
+            <div ref={componentRef} >
               {prinDataCart()}
             </div>
             { dataCart.length >0 &&
@@ -163,12 +163,12 @@ const printTotalCharge = () =>{
       {
         openModal &&
         <>
-          <div className='fixed inset-44 w-1/2 bg-white px-4 py-2'>
+          <div className='fixed inset-44 top-28 z-50 w-1/2 bg-white h-fit px-4 py-2'>
             <div>
               <p className='mt-2'>Detail Pesanan</p>
             </div>
-            <div className='grid grid-cols-3 gap-3 mt-10'>
-                <table className='w-full bg-slate-100 col-span-2 '>
+            <div className='grid grid-cols-3 gap-3 my-5'>
+                <table className='w-full bg-slate-100  col-span-2 '>
                   <thead>
                     <tr className='h-12'>
                         <th>#</th>
