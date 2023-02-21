@@ -6,7 +6,7 @@ const dbSeq = new Sequelize({
     dialect:'mysql',
     host:process.env.DB_HOST,
     username:process.env.DB_USER,
-    database:'e-menu',
+    database:process.env.DB_NAME,
     password:process.env.DB_PASSWORD
     }
 );
